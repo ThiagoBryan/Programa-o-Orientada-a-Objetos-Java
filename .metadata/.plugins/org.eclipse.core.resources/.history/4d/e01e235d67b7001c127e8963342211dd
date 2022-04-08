@@ -1,0 +1,39 @@
+		// 3. Crie o programa “mini calculadora”, que após ler dois números inteiros
+		// apresenta as operações de
+		// soma, subtração, multiplicação e divisão com eles.
+		// Obs.: Trate o maior número possível de erros (ex: operações com números
+		// negativos, divisão por zero, uso de letras, etc).
+package br.com.residencia;
+
+import java.util.Scanner;
+
+public class Lista01treinarjava03 {
+
+	public static void main(String[] args) {
+
+		Scanner leia = new Scanner(System.in);
+		int numero1, numero2;
+
+		System.out.println("\t===Mini-Calculadora===\n");
+		System.out.println("Escreva dois número inteiros: ");
+		numero1 = leia.nextInt();
+		numero2 = leia.nextInt();
+
+		int soma = numero1 + numero2;
+		int subtracao = numero1 - numero2;
+		int multiplicacao = numero1 * numero2;
+
+		System.out.println("Soma: " + soma);
+		System.out.println("Subtração: " + subtracao);
+		System.out.println("Multiplicação: " + multiplicacao);
+		if (numero2 == 0) {
+			System.out.println("Não é possível divisão por 0.");
+		} else {
+			float divisao = numero1 / numero2;
+			System.out.format("Divisao: %.0f", divisao); // para arredondar as casas decimais.
+		}
+
+		leia.close();
+	}
+
+}

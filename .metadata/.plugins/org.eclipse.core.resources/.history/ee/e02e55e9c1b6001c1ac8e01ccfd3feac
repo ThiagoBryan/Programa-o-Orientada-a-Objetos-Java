@@ -1,0 +1,39 @@
+package br.com.residencia;
+
+import java.util.Scanner;
+
+public class Principal {
+
+	public static void main(String[] args) {
+		
+		System.out.println("HELLO WORLD!");
+		System.out.println("\tHELLO AGAIN!");
+		System.out.println("\nHELLO AGAIN AGAIN!");
+		System.out.println("\\HELLO AGAIN AGAIN AGAIN!");
+		System.out.println("\'HELLO AGAIN AGAIN AGAIN AGAIN!");
+		System.out.println("\"HELLO\" AGAIN AGAIN AGAIN AGAIN AGAIN!");
+		
+		String nome, sobrenome;
+		
+		System.out.println("Digite seu nome: ");
+		Scanner.class(nome);
+		
+		System.out.println("Escreva seu sobrenome: ");
+		Scanner.class(sobrenome);
+		
+		
+		
+		
+		
+		
+		
+		
+		/*int numero = 2;
+		int numero2 = 4;
+		
+		int soma = numero + numero2;
+		System.out.println("soma = " + soma);*/
+
+	}
+
+}

@@ -1,0 +1,28 @@
+		// 4.O programa “termômetro” lê uma temperatura em graus celsius, e devolve sua
+		// equivalência na escala fahrenheit.
+		// (Use: F = C * 1, 8 + 32);
+package br.com.residencia;
+
+import java.util.Scanner;
+
+public class Lista01treinarjava04 {
+
+	public static void main(String[] args) {
+
+		Scanner leia = new Scanner(System.in);
+		double temperaturaC;
+
+		System.out.println("\t===Têrmometro===\n");
+
+		System.out.print("Digite uma temperatura em Celsius: ");
+		temperaturaC = leia.nextDouble();
+
+		double temperaturaF = temperaturaC * 1.8 + 32;
+
+		System.out.println("A temperatura em F° é: " + temperaturaF);
+
+		leia.close();
+
+	}
+
+}
