@@ -13,16 +13,18 @@ public class Java06 {
 		Scanner leia = new Scanner(System.in);
 		int numero;
 
-		System.out.println("Escreva um numero entre 1 e 1000: ");
+		System.out.print("Escreva um numero entre 1 e 1000: ");
 		numero = leia.nextInt();
 		leia.close();
+		System.out.println("");
 
 		if (numero < 1 || numero >= 1000) {
 			System.out.println("Erro!! Escreva um numero entre 1 e 1000");
 		} else {
-			for (int i = 1; i <= 20; i++) {
+			for (int i = 1; i <= numero ; i++) {
 				if (i % 2 != 0) {
 					System.out.println(i);
+				
 
 				}
 			}

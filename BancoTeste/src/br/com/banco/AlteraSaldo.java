@@ -9,4 +9,5 @@ public interface AlteraSaldo {
 }
 
 
-//Interface é um contrato onde todos aqueles que assinarem serão obrigados a implementar seus métodos.
+//Interface é um contrato onde todos aqueles que assinarem serão obrigados a 
+//implementar seus métodos e atributos.

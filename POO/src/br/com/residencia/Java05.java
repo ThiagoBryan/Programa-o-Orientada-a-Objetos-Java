@@ -12,15 +12,16 @@ public class Java05 {
 
 		Scanner leia = new Scanner(System.in);
 
-		int senha = 12345;
+		String senha = "12345";
 		System.out.println("Digite a senha correta: ");
-		senha = leia.nextInt();
-		while (senha != 12345) {
+		senha = leia.next();
+		while (!senha.equalsIgnoreCase ("12345")) {
 			System.out.println("Senha Inválida");
 			System.out.println("Digite a senha correta: ");
-			senha = leia.nextInt();
+			senha = leia.next();
+			
 		}
-		System.out.println("Senha correta");
+		System.out.println("Senha correta! Bem-Vindo");
 		leia.close();
 
 	}

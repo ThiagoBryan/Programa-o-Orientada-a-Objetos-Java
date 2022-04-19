@@ -21,7 +21,7 @@ public class TesteConta {
 		//System.out.println(contaPj == contaPj2);// comparando referência memória
 		//System.out.println(contaPj.getCnpj() == contaPj2.getCnpj());// comparando os valores
 
-		//System.out.println("Titlular: " + contaPf.getCpf() + " Saldo: " + contaPf.getSaldo());
+//		System.out.println("Titlular: " + contaPf.getCpf() + " Saldo: " + contaPf.getSaldo());
 //		contaPf.deposita(100);
 //		System.out.println("Saldo: " + contaPf.getSaldo());
 
@@ -31,6 +31,7 @@ public class TesteConta {
 //		contaPf.saca(400);
 //		System.out.println("Saldo: " + contaPf.getSaldo());
 
+		
 	}
 
 }

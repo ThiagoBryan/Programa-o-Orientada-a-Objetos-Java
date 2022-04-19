@@ -1,0 +1,12 @@
+//tipoConta;numeroAgencia;numeroConta ----->>>Criar 6 objetos
+Corrente;1651;154890
+//tipoConta;numeroAgencia;numeroConta ----->>>Criar 6 objetos
+Poupanca;1651;123455
+//tipoUsuario, nome, cpf ----->>>Criar 6 objetos
+Cliente;Ana;1
+//tipoUsuario;nome;cpf ----->>>Criar 4 objetos
+Gerente;Debora;416
+//tipoUsuario;nome;cpf ----->>>Criar 2 objetos
+Diretor;Rich;869
+//tipoUsuario;nome;cpf ----->>>Criar 1 objeto
+Presidente;Jose;944
