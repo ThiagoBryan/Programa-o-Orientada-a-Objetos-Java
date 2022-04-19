@@ -1,4 +1,4 @@
-package br.com.curso.aula07;
+package br.com.curso.aula07e08;
 
 
 public class Lutador {
