@@ -6,4 +6,9 @@
     <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="java.util.Random"/>
+    <fullyQualifiedTypeName name="br.com.trabalhoBanco.Principal"/>
+    <fullyQualifiedTypeName name="br.com.curso.aula10.Funcionario"/>
+    <fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
+    <fullyQualifiedTypeName name="br.com.residencia.banco.pessoas.Funcionario"/>
+    <fullyQualifiedTypeName name="br.com.residencia.banco.pessoas.Gerente"/>
 </qualifiedTypeNameHistroy>

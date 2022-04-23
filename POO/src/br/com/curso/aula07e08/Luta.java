@@ -60,9 +60,10 @@ public class Luta {
 	public void lutar() {
 		if(this.aprovada) {
 			System.out.println("### DESAFIADO ###\n");
-			this.desafiado.apresentar(); //PERGUNTAR PQ toString(); NÃO FUNCIONA;
+			System.out.println(this.desafiado.toString());
 			System.out.println("### DESAFIANTE ###\n");
-			this.desafiante.apresentar(); //PERGUNTAR PQ toString(); NÃO FUNCIONA;
+			System.out.println(this.desafiante.toString());
+			
 			
 			Random aleatorio = new Random();
 			Integer vencedor = aleatorio.nextInt(3);// Gera 3 resultados 0 , 1 ou 2;

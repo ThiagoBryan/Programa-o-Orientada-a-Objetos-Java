@@ -97,21 +97,6 @@ public class Lutador {
 		this.empates = empates;
 	}
 	
-	//MÉTODOS
-	
-	public void apresentar() {
-		System.out.println("Nome: " + getNome());
-		System.out.println("Nacionalidade:" + getNacionalidade());
-		System.out.println("Idade: " + getIdade());
-		System.out.println("Altura: " + getAltura());
-		System.out.println("Peso: " + getPeso());
-		System.out.println("Categoria: " + getCategoria());
-		System.out.println("Vitórias: " + getVitorias());
-		System.out.println("Derrotas: " + getDerrotas());
-		System.out.println("Empates: " + getEmpates());
- 
-	}
-	
 	public void status() {
 		System.out.println("\t\t\t===Dados===\n");
 		System.out.println(getNome());
