@@ -1,113 +1,91 @@
 package br.com.residencia.banco.contas;
 
-import java.util.Date;
+import br.com.residencia.banco.enums.TipoConta;
+import br.com.residencia.banco.pessoas.Cliente;
 
-public class Conta {
-	
-	Integer idConta;
-	String tipoConta;
-	String senha;
+public abstract class Conta {
+
+	private Integer idConta;
+	private TipoConta tipoConta;
 	private String numeroAgencia;
 	private String numeroConta;
-	private Double saldo;
-	Date dataAbertura;
-	boolean status;
+	protected Double saldo;
+	//private static int totalDeContas;
+	private static final double TAXA_SAQUE =  0.1;
+	private static final double TAXA_DEPOSITO = 0.1;
+	private static final double TAXA_TRANSFERENCIA = 0.2;
+
 	
-	//GETTERS AND SETTERS
 	
+	// GETTERS AND SETTERS
+
 	public Integer getIdConta() {
 		return idConta;
 	}
-	public void setIdConta(Integer idConta) {
-		this.idConta = idConta;
-	}
-	public String getTipoConta() {
+	
+	public TipoConta getTipoConta() {
 		return tipoConta;
 	}
-	public void setTipoConta(String tipoConta) {
-		this.tipoConta = tipoConta;
-	}
-	public String getSenha() {
-		return senha;
-	}
-	public void setSenha(String senha) {
-		this.senha = senha;
-	}
+	
 	public String getNumeroAgencia() {
 		return numeroAgencia;
 	}
-	public void setNumeroAgencia(String numeroAgencia) {
-		this.numeroAgencia = numeroAgencia;
-	}
+	
 	public String getNumeroConta() {
 		return numeroConta;
 	}
-	public void setNumeroConta(String numeroConta) {
-		this.numeroConta = numeroConta;
-	}
+	
+
 	public Double getSaldo() {
 		return saldo;
 	}
-	public void setSaldo(Double saldo) {
-		this.saldo = saldo;
+	
+	public static double getTaxaSaque() {
+		return TAXA_SAQUE;
 	}
-	public Date getDataAbertura() {
-		return dataAbertura;
+
+	public static double getTaxaDeposito() {
+		return TAXA_DEPOSITO;
 	}
-	public void setDataAbertura(Date dataAbertura) {
-		this.dataAbertura = dataAbertura;
+
+	public static double getTaxaTransferencia() {
+		return TAXA_TRANSFERENCIA;
 	}
-	public boolean isStatus() {
-		return status;
-	}
-	public void setStatus(boolean status) {
-		this.status = status;
-	}
+
+
+	
+	
+	
 	
 //	Métodos 
+
+	public abstract boolean sacar(double valor);
+
+	//PARA TRASNFERÊNCIA
+	public void depositarPorTransferencia(double valor, Conta contaDestino) {
+		System.out.printf("Valor Depositado: %.2f " , valor);
+		double novoSaldo = contaDestino.getSaldo() + valor;
+		contaDestino.saldo = novoSaldo;
+	}
+
+	public abstract void depositar(double valor);
 	
-	public boolean sacar(double valor) {
-		if (this.saldo < valor) {
-			return false;
-		} else {
-			double novoSaldo = this.saldo - valor;
-			this.saldo = novoSaldo;
-			return true;
-		}
-	}
+
+	public abstract boolean transferir(double valor, Conta contaDestino);
+
 	
-	public void depositar(double valor) {
-		this.saldo += valor;
 
-	}
-	
-	public boolean transferir(double valor, ContaCorrente contaDestino) {
-		if (this.saldo > valor) {
-			this.sacar(valor);
-			contaDestino.depositar(valor);
-			return true;
-		} else {
-			return false;
-		}
-	}
-	
-	public void exibirExtrato() {
-		
+	// CONSTRUTOR
+
+	public Conta(Integer idConta, TipoConta tipoConta,  String numeroAgencia, String numeroConta, Double saldo) {
+		super();
+		this.idConta = idConta;
+		this.tipoConta = tipoConta;
+		this.numeroAgencia = numeroAgencia;
+		this.numeroConta = numeroConta;
+		this.saldo = saldo;
 	}
 
-	public void pagarContas() {
 
-	}
 
-	public void investir() {
-
-	}
-
-	public void pegarEmprestimo() {
-
-	}
-
-	public void fecharConta() {
-
-	}
 }

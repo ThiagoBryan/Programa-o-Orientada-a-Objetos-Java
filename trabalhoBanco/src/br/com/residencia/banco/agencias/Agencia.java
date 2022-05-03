@@ -2,37 +2,45 @@ package br.com.residencia.banco.agencias;
 
 public class Agencia {
 	
-	Integer idAgencia;
-	String endereco;
-	Integer numeroAgencia;
-	Integer idDiretor;
+	private Integer idAgencia;
+	private String endereco;
+	private String numeroAgencia;
+	private Integer idGerente;
+	private Integer idDiretor;
 	
 		//GETTERS AND SETTERS
 	
 	public Integer getIdAgencia() {
 		return idAgencia;
 	}
-	public void setIdAgencia(Integer idAgencia) {
-		this.idAgencia = idAgencia;
-	}
+	
 	public String getEndereco() {
 		return endereco;
 	}
-	public void setEndereco(String endereco) {
-		this.endereco = endereco;
-	}
-	public Integer getNumeroAgencia() {
+	
+	public String getNumeroAgencia() {
 		return numeroAgencia;
 	}
-	public void setNumeroAgencia(Integer numeroAgencia) {
-		this.numeroAgencia = numeroAgencia;
-	}
+	
 	public Integer getIdDiretor() {
 		return idDiretor;
 	}
-	public void setIdDiretor(Integer idDiretor) {
+	
+	public Integer getIdGerente() {
+		return idGerente;
+	}
+
+		
+	//CONSTRUTOR
+	public Agencia(Integer idAgencia, String endereco, String numeroAgencia, Integer idGerente, Integer idDiretor) {
+		super();
+		this.idAgencia = idAgencia;
+		this.endereco = endereco;
+		this.numeroAgencia = numeroAgencia;
+		this.idGerente = idGerente;
 		this.idDiretor = idDiretor;
 	}
-	
+
 	
 }
+

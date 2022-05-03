@@ -1,0 +1,9 @@
+		===========Rendimento============
+
+ID Cliente: 4
+Agência: 8974
+Número da Conta: 56987
+Simulação do Rendimento:
+ Valor informado: R$1500.0 [Seu rendimento será de: R$30.0 em 20 dias.]
+		
+=============FIM==============

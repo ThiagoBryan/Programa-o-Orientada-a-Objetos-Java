@@ -1,5 +1,9 @@
 package br.com.curso.aula10;
 
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
 public class Principal {
 
 	public static void main(String[] args) {
@@ -31,6 +35,22 @@ public class Principal {
 		System.out.println(pessoa03.toString());
 		System.out.println(pessoa04.toString());
 		
+		
+		List<String> listaF = new ArrayList<>();
+		
+		Funcionario f1 = new Funcionario();
+		f1.setIdade(25);
+		Funcionario f2 = new Funcionario();
+		f2.setIdade(22);
+		Funcionario f3 = new Funcionario();
+		f3.setIdade(36);
+		
+		listaF.add("f1");
+		listaF.add("f2");
+		listaF.add("f3");
+		//Collections.sort();
+		
+		System.out.println(listaF);
 	
 		
 		

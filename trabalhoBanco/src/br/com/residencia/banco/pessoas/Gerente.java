@@ -1,10 +1,13 @@
 package br.com.residencia.banco.pessoas;
 
+import br.com.residencia.banco.enums.TipoPessoa;
+
 public class Gerente extends Funcionario {
 
 	// ATRIBUTOS
 	private Integer idGerente;
-	private Integer idAgencia;
+	private String senha;
+	private TipoPessoa tipoPessoa;
 	
 	
 	// GETTERS AND SETTERS
@@ -12,38 +15,32 @@ public class Gerente extends Funcionario {
 		return idGerente;
 	}
 
-	public void setIdGerente(Integer idGerente) {
+	public String getSenha() {
+		return senha;
+	}
+
+//	public void setSenha(String senha) {
+//		this.senha = senha;
+//	}
+
+	public TipoPessoa getTipoPessoa() {
+		return tipoPessoa;
+	}
+
+	public void setTipoPessoa(TipoPessoa tipoPessoa) {
+		this.tipoPessoa = tipoPessoa;
+	}
+	
+	//CONTSRUTOR
+//	public Gerente() {
+//		super();
+//	}
+
+	public Gerente(String nome, String cpf, String endereco, String telefone, Integer idFuncionario, Double salario,
+			String cargo, Integer idGerente, String senha, TipoPessoa tipoPessoa) {
+		super(nome, cpf, endereco, telefone, idFuncionario, salario, cargo);
 		this.idGerente = idGerente;
+		this.senha = senha;
+		this.tipoPessoa = tipoPessoa;
 	}
-
-	public Integer getIdAgencia() {
-		return idAgencia;
-	}
-
-	public void setIdAgencia(Integer idAgencia) {
-		this.idAgencia = idAgencia;
-	}
-
-	// MÉTODOS
-	public void contratar() {
-		
-	}
-	
-	public void demitir() {
-		
-	}
-	
-	public double getBonificacao() {  //* 1.5
-		return super.getBonificacao() + this.salario * 0.05;
-		
-	}
-
-	public Gerente(Integer idFuncionario, String senhaAcesso, String login, Double salario, String cargo,
-			Integer idGerente, Integer idAgencia) {
-		super(idFuncionario, senhaAcesso, login, salario, cargo);
-		this.idGerente = idGerente;
-		this.idAgencia = idAgencia;
-	}	
-	
-
 }

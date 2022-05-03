@@ -1,0 +1,20 @@
+		
+===========Transações============
+ID Cliente: 2
+Agência: 8256
+Conta: 223365
+Tipo Transação: Transferência
+Valor: 100,00
+ID Cliente: 2
+Agência: 8256
+Conta: 223365
+Tipo Transação: Saque
+Valor: 100,00
+ID Cliente: 2
+Agência: 8256
+Conta: 223365
+Tipo Transação: Depósito
+Valor: 500,00
+Total tarifas: R$ 0.4
+Saldo Final: R$ 299,60 		
+============FIM============
