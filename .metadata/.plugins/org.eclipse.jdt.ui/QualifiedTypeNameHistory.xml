@@ -29,7 +29,6 @@
     <fullyQualifiedTypeName name="br.com.residencia.banco.io.Escrita"/>
     <fullyQualifiedTypeName name="br.com.residencia.banco.pessoas.Gerente"/>
     <fullyQualifiedTypeName name="br.com.residencia.banco.contas.Conta"/>
-    <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
     <fullyQualifiedTypeName name="java.sql.Date"/>
     <fullyQualifiedTypeName name="java.time.LocalDate"/>
@@ -45,4 +44,14 @@
     <fullyQualifiedTypeName name="br.com.residencia.banco.io.Leitura"/>
     <fullyQualifiedTypeName name="br.com.residencia.banco.menus.MenuConta"/>
     <fullyQualifiedTypeName name="br.com.residencia.banco.logins.Login"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RestController"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="org.serratec.java2.backend.Projeto02.model.Todo"/>
+    <fullyQualifiedTypeName name="java.util.Arrays"/>
+    <fullyQualifiedTypeName name="org.serratec.java2.backend.Projeto02.Service.TodoService"/>
+    <fullyQualifiedTypeName name="org.springframework.stereotype.Service"/>
+    <fullyQualifiedTypeName name="org.springframework.boot.autoconfigure.AutoConfigureOrder"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PostMapping"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestBody"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestMapping"/>
 </qualifiedTypeNameHistroy>
